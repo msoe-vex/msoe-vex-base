@@ -9,7 +9,7 @@
 - Install C++ extension for VSCode (if your project does not compile or runs into IntelliSense Problems, downgrade to 1.18.4)
 
 ### Cloning the repo
-#### Options 1: Using GitHub desktop
+#### Options 1: Using the terminal
 - If it's your first time using a terminal, please ask if you have questions! The terminal is an awesome tool for programmers and we'd love to help you get more comfortable with it
 - Open Git Bash (press the Windows key and type in git bash, though you can use another terminal if you're more comfortable with that one, i.e. PowerShell)
 - Navigate to a folder where you want the project to be copied to

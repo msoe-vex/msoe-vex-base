@@ -1,4 +1,5 @@
 /.d
 /.vscode
 /bin
+/.cache
 compile_commands.json

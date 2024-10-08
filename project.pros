@@ -1,7 +1,7 @@
 {
   "py/object": "pros.conductor.project.Project",
   "py/state": {
-    "project_name": "big-robot",
+    "project_name": "LemLib Test",
     "target": "v5",
     "templates": {
       "EZ-Template": {
@@ -27,6 +27,29 @@
         "target": "v5",
         "user_files": [],
         "version": "3.0.0"
+      },
+      "LemLib": {
+        "location": "C:\\Users\\needhama\\AppData\\Roaming\\PROS\\templates\\LemLib@0.4.7",
+        "metadata": {
+          "origin": "LemLib"
+        },
+        "name": "LemLib",
+        "py/object": "pros.conductor.templates.local_template.LocalTemplate",
+        "supported_kernels": "^3.8.0",
+        "system_files": [
+          "firmware\\LemLib.a",
+          "include\\lemlib\\chassis\\odom.hpp",
+          "include\\lemlib\\pose.hpp",
+          "include\\lemlib\\util.hpp",
+          "include\\lemlib\\chassis\\trackingWheel.hpp",
+          "include\\lemlib\\pid.hpp",
+          "include\\lemlib\\api.hpp",
+          "include\\lemlib\\logger.hpp",
+          "include\\lemlib\\chassis\\chassis.hpp"
+        ],
+        "target": "v5",
+        "user_files": [],
+        "version": "0.4.7"
       },
       "kernel": {
         "location": "C:\\Users\\union\\AppData\\Roaming\\PROS\\templates\\kernel@3.8.0",
@@ -333,8 +356,10 @@
       }
     },
     "upload_options": {
-      "description": "big robot code",
-      "slot": 1
-    }
+      "description": "LemLib Odometry Test",
+      "slot": 1,
+      "icon": "pros"
+    },
+    "use_early_access": false
   }
 }

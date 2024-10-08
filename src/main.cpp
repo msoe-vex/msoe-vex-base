@@ -9,14 +9,14 @@
 ez::Drive chassis (
   // Left Chassis Ports (negative port will reverse it!)
   //   the first port is used as the sensor
-  {13, 15, 17}
+  {-13, -15, -17}
 
   // Right Chassis Ports (negative port will reverse it!)
   //   the first port is used as the sensor
   ,{1, 3, 9}
 
   // IMU Port
-  ,1
+  ,9
 
   // Wheel Diameter (Remember, 4" wheels without screw holes are actually 4.125!)
   ,3.0
@@ -56,6 +56,7 @@ void initialize() {
   // Autonomous Selector using LLEMU
   ez::as::auton_selector.autons_add({
     Auton("Competition Auton", competition_auton),
+    Auton("Test", test_auton)
   });
 
   // Initialize chassis and auton selector
@@ -161,8 +162,8 @@ void opcontrol() {
     //     chassis.pid_tuner_toggle();
         
     //   // Trigger the selected autonomous routine
-    //   if (master.get_digital_new_press(DIGITAL_B)) 
-    //     autonomous();
+       if (master.get_digital_new_press(DIGITAL_B)) 
+         autonomous();
 
     //   chassis.pid_tuner_iterate(); // Allow PID Tuner to iterate
     // } 

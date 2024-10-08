@@ -7,3 +7,5 @@ extern ez::Drive chassis;
 void default_constants();
 
 void competition_auton();
+
+void test_auton();

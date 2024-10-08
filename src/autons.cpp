@@ -42,6 +42,15 @@ void competition_auton() {
   //example turn left
   chassis.pid_turn_set(-90_deg, TURN_SPEED);
   chassis.pid_wait();
+}
 
+void test_auton() {
+  chassis.pid_drive_set(60_in, DRIVE_SPEED);
+  chassis.pid_wait();
 
+  chassis.pid_turn_set(-90_deg, TURN_SPEED);
+  chassis.pid_wait();
+
+  chassis.pid_drive_set(60_in, DRIVE_SPEED);
+  chassis.pid_wait();
 }

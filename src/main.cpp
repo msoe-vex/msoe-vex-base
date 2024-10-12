@@ -1,4 +1,9 @@
 #include "main.h"
+#include "lemlib/api.hpp" // IWYU pragma: keep
+
+pros::MotorGroup left_motors({13, 3}); // left motors on ports 1, 2, 3
+pros::MotorGroup right_motors({-19, -9}); // right motors on ports 4, 5, 6
+
 
 /////
 // For installation, upgrading, documentations and tutorials, check out our website!
@@ -9,26 +14,26 @@
 ez::Drive chassis (
   // Left Chassis Ports (negative port will reverse it!)
   //   the first port is used as the sensor
-  {13, 15, 17}
+  {13, 3}
 
   // Right Chassis Ports (negative port will reverse it!)
   //   the first port is used as the sensor
-  ,{1, 3, 9}
+  ,{-19, -9}
 
   // IMU Port
-  ,1
+  ,16
 
   // Wheel Diameter (Remember, 4" wheels without screw holes are actually 4.125!)
-  ,3.0
+  ,2.0
 
   // Cartridge RPM
-  ,200
+  ,600
 
   // External Gear Ratio (MUST BE DECIMAL) This is WHEEL GEAR / MOTOR GEAR
   // eg. if your drive is 84:36 where the 36t is powered, your RATIO would be 84/36 which is 2.333
   // eg. if your drive is 60:36 where the 36t is powered, your RATIO would be 60/36 which is 0.6
   // eg. if your drive is 36:60 where the 60t is powered, your RATIO would be 36/60 which is 0.6
-  ,1.667
+  ,1
 );
 
 /**

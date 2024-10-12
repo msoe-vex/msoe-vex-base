@@ -5,4 +5,5 @@
 extern pros::Motor MotorName;
 
 //Pneumatics
-extern pros::ADIPort PneumaticName;
+extern pros::ADIPort Claw1;
+extern pros::ADIPort Claw2;

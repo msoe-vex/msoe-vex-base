@@ -2,7 +2,7 @@
 
 #include "EZ-Template/drive/drive.hpp"
 
-extern ez::Drive chassis;
+extern ez::Drive ezChassis;
 
 void default_constants();
 

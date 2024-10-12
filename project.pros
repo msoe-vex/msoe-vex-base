@@ -357,7 +357,7 @@
     },
     "upload_options": {
       "description": "LemLib Odometry Test",
-      "slot": 1,
+      "slot": 3,
       "icon": "pros"
     },
     "use_early_access": false
